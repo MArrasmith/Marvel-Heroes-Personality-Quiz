@@ -1,7 +1,14 @@
 h1 {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #ec2020 !important;
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: center !important;
+}
+.my-notification-button.button.is-primary{
+font-family: Arial, sans-serif;
+background-color: #ec2020 !important;
+margin: 0;
+padding: 0;
+text-align: center !important;
 }
