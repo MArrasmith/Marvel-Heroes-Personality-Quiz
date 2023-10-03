@@ -12,3 +12,9 @@ margin: 0;
 padding: 0;
 text-align: center !important;
 }
+
+.column {
+    padding: 60px;
+    background-image: url(./MarvelCharacters.jpg);
+    
+}
