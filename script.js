@@ -59,7 +59,7 @@ function getHeroInfo(heroname){
   .then(data => {
     // Process and display data on your website
     console.log(data);
-    
+
   })
   .catch(error => {
     console.error('Error fetching data:', error);
