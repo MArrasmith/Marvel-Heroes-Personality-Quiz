@@ -137,33 +137,7 @@
         </div>
     </section>
 
-    <script>
-        const questions = document.querySelectorAll('.question');
-        const nextBtn = document.getElementById('nextBtn');
-        let currentQuestion = 0;
-
-        function showQuestion(questionIndex) {
-            questions.forEach((question, index) => {
-                if (index === questionIndex) {
-                    question.style.display = 'block';
-                } else {
-                    question.style.display = 'none';
-                }
-            });
-        }
-
-        nextBtn.addEventListener('click', () => {
-            currentQuestion++;
-            if (currentQuestion < questions.length) {
-                showQuestion(currentQuestion);
-            } else {
-                // Quiz completed, you can handle this case here
-                alert('Quiz completed!');
-            }
-        });
-
-        // Show the first question initially
-        showQuestion(currentQuestion);
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src = "./script.js"></script>
 </body>
 </html>
