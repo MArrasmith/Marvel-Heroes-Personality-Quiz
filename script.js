@@ -29,7 +29,7 @@ function getPoints(){
           caPoints++;
           break;
         case 'TheHulk':
-          hulkPointsPoints++;
+          hulkPoints++;
           break;
         case 'Thor':
           thorPoints++;
@@ -61,7 +61,7 @@ function getPoints(){
       }
 
         nextBtn.addEventListener('click', () => {
-          getPoints();
+            getPoints();
             currentQuestion++;
             if (currentQuestion < questions.length) {
                 showQuestion(currentQuestion);
