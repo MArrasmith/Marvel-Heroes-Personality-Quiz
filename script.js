@@ -138,7 +138,8 @@ function displayResults(heroName){
       modal.style.backgroundColor = "white";
       heroText.textContent = "You are " + heroName + "!";
       heroInfo.textContent = data.data.results[0].description;
-
+      localStorage.setItem("heroDESC", data.data.results[0].description);
+      localStorage.setItem("prevHERO", heroName);
       console.log(caPoints + " " + ironPoints + " " + thorPoints + " " + hulkPoints + " " + antPoints + " " + waspPoints);
       
     })
@@ -161,6 +162,8 @@ function displayResults(heroName){
         heroGif.onload = function(){
           gif.innerHTML = "";
           gif.appendChild(heroGif);
+          localStorage.setItem("heroGIF", heroGif);
+          
 
         }
         heroGif.src = heroGifUrl;
